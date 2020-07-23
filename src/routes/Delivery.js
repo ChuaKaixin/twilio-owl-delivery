@@ -82,7 +82,7 @@ class Delivery extends Component {
                 </tr>
                 <tr>
                 <td class="font-weight-bold">Special Instructions</td>
-                <td>Please leave item in shoe rack.</td>
+                <td>Please call to check if at home or leave in shoe rack.</td>
                 </tr>
             </tbody>
             </Table>
