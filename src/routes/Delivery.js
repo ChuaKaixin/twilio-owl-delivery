@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
-import {Container, Row, Col, Image, Form, Button, Spinner, Jumbotron, Table, Alert} from 'react-bootstrap'
+import {Container, Row, Col, Image, Form, Button, Spinner, Jumbotron, Table, Alert, Card} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {initiateCall, hangupCall, muteCall, pickupCall} from '../handler/commHandler';
 
@@ -23,6 +23,8 @@ class Delivery extends Component {
         <div>
             {!this.state.clientInitiatedId &&
             <Container className="p-3">
+                <Card>
+                    <Card.Body>
                 <div className="spacer"></div>
             <Row>
                 <Col></Col>
@@ -53,9 +55,13 @@ class Delivery extends Component {
                 </Spinner>
                 }
             </div>
+                </Card.Body>
+                </Card>
             </Container>}
             {this.state.clientInitiatedId && 
             <Container className="p-3">
+            <Card>
+                <Card.Body>
                 <Jumbotron>
                 <h2>
                     <Alert variant="info">{this.state.clientInitiatedId}, your next delivery details..</Alert>
@@ -115,8 +121,9 @@ class Delivery extends Component {
                 }
                     </p>
                 </Jumbotron>
+                </Card.Body>
+                </Card>
             </Container>}
-
         </div>
       );
   
