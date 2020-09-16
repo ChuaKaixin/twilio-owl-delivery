@@ -70,11 +70,11 @@ class Delivery extends Component {
             <tbody>
                 <tr>
                 <td class="font-weight-bold">Order Ref</td>
-                <td>202007890</td>
+                <td>202009890</td>
                 </tr>
                 <tr>
                 <td class="font-weight-bold">Recipient Name</td>
-                <td>Floyd</td>
+                <td>Erica</td>
                 </tr>
                 <tr>
                 <td class="font-weight-bold">Address</td>
